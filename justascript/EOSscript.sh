@@ -15,6 +15,7 @@ cd /etc/ ; sudo mkdir lf
 ln -sfv ~/Important/EOS/lf/lfrc /etc/lf
 ln -sfv ~/Important/EOS/lf/icons /etc/lf
 ln -sfv ~/Important/EOS/neofetch ~/.config/
+ln -s /run/media/joel/Data/Videos/ ~/
 ln -sfv ~/Important/EOS/nvim ~/.config/
 ln -sfv ~/Important/EOS/spicetify ~/.config/
 ln -sfv ~/Important/EOS/hypr ~/.config/
