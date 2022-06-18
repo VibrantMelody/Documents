@@ -11,10 +11,13 @@ ln -sfv ~/Important/EOS/alacritty ~/.config/
 ln -sfv ~/Important/EOS/BetterDiscord ~/.config/
 ln -sfv ~/Important/EOS/fish ~/.config/
 ln -sfv ~/Important/EOS/lf ~/.config/
-ln -sfv ~/Important/EOS/lf /etc/
+cd /etc/ ; sudo mkdir lf
+ln -sfv ~/Important/EOS/lf/lfrc /etc/lf
+ln -sfv ~/Important/EOS/lf/icons /etc/lf
 ln -sfv ~/Important/EOS/neofetch ~/.config/
 ln -sfv ~/Important/EOS/nvim ~/.config/
 ln -sfv ~/Important/EOS/spicetify ~/.config/
+ln -sfv ~/Important/EOS/hypr ~/.config/
 ln -sfv ~/Important/EOS/.mozilla ~/
 ln -sfv ~/Important/EOS/wallpaper ~/Pictures/
 ln -sfv ~/Important/EOS/local/fonts ~/.local/share/
@@ -44,7 +47,7 @@ sudo pacman -S --noconfrim --needed mutter-rounded
 echo "preparing to install necessary packages"
 sleep 2
 sudo pacman -Rns vi vim 
-sudo pacman -S --noconfirm --needed alacritty exa lf neovim neofetch htop ytfzf yt-dlp imv mpv discord spotify fragments fprintd
+sudo pacman -S --noconfirm --needed alacritty exa lf neovim neofetch htop ytfzf yt-dlp imv mpv discord spotify fragments fprintd brave
 sudo pacman -S --noconfirm --needed zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps
 echo "Downloading and installing betterdiscord"
 sudo pacman -S --noconfirm --needed betterdiscordctl-git
@@ -70,7 +73,7 @@ yay alacritty-themes
 mv ~/justascript ~/Documents/
 sudo pacman -S brave ; sudo pacman -S --noconfirm --needed chrome-gnome-shell
 sudo pacman -Rns gnome-terminal xterm 
-pacman -S onlyoffice libreoffice
+pacman -S --noconfirm onlyoffice libreoffice
 exit
 
 #echo -e "Now just change your wallpaper, set the themes and change font and you're good to go \n enjoy" ; sleep 5
