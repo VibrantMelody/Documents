@@ -20,6 +20,7 @@ ln -sfv ~/Important/EOS/nvim ~/.config/
 ln -sfv ~/Important/EOS/spicetify ~/.config/
 ln -sfv ~/Important/EOS/hypr ~/.config/
 ln -sfv ~/Important/EOS/.mozilla ~/
+ln -sfv ~/Important/EOS/BraveSoftware ~/.config/
 ln -sfv ~/Important/EOS/wallpaper ~/Pictures/
 ln -sfv ~/Important/EOS/local/fonts ~/.local/share/
 ln -sfv ~/Important/EOS/local/gnome-shell ~/.local/share/
