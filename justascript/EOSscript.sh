@@ -66,12 +66,6 @@ sudo pacman -S --noconfirm --needed chrome-gnome-shell
 
 echo "enabling bluetooth" ; sudo systemctl enable bluetooth
 
-echo "Some extra wallpapers?"
-read -r -p "y/n: " ye
-case $ye in 
-	"y") cd ~/Pictures/wallpaper && git clone --depth 1 https://github.com/makccr/wallpapers ;;
-	"n") echo "Okay nevermind" ;;
-esac
 yay alacritty-themes
 mv ~/justascript ~/Documents/
 sudo pacman -S brave ; sudo pacman -S --noconfirm --needed chrome-gnome-shell
